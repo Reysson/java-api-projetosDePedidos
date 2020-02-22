@@ -1,0 +1,5 @@
+package com.reysson.cursomc.domain;
+
+public class Categoria {
+
+}
