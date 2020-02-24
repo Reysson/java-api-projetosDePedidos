@@ -1,0 +1,5 @@
+package com.reysson.cursomc.service.exception;
+
+public class ObjetoNaoEncotradoException {
+
+}

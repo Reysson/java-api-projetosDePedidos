@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.reysson.cursomc.domain.Categoria;
 import com.reysson.cursomc.repositories.CategoriaRepositories;
-import com.reysson.cursomc.service.exception.ObjetoNaoEncotradoException;
 
 @Service
 public class CategoriaService {
@@ -15,8 +14,8 @@ public class CategoriaService {
 	@Autowired
 	private CategoriaRepositories categoriaRepositories;
 	
-	public Categoria buscar(Integer id) {
+	public Optional<Categoria> buscar(Integer id) {
 		Optional<Categoria> obj = categoriaRepositories.findById(id);
-		return obj.orElseThrow(() -> new ObjetoNaoEncotradoException("Objeto não encontrado! Id: " + id + ", Tipo: " + Categoria.class.getName())); 
+		return obj;
 	}
 }
