@@ -1,0 +1,5 @@
+package com.reysson.cursomc.repositories;
+
+public class CategoriaRepositories {
+
+}
