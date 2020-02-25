@@ -2843,3 +2843,69 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	... 1 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:34:27.549
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.WZXGdNgT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:34:27.782
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.WZXGdNgT
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:34:27.991
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:34:28.037
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.WZXGdNgT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:15.260
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:15.478
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7ec9d826[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:15.696
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:38.147
+!MESSAGE Boot LS startup time from start to initialized: 21858ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:39.462
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LlaMgqXyisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.647
+!MESSAGE subscribing to classpath changes: sts4.classpath.LlaMgqXy isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.685
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.749
+!MESSAGE subsribers = {sts4.classpath.LlaMgqXy=Send Classpath Notifications(1527)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.778
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.846
+!MESSAGE project cursomc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.872
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.897
+!MESSAGE Preparing classpath changed notification cursomc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.922
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LlaMgqXy => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:40.948
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:41.068
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:41.384
+!MESSAGE buffering callback sts4.classpath.LlaMgqXy cursomc false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:41.612
+!MESSAGE executing callback sts4.classpath.LlaMgqXy 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-24 20:45:41.996
+!MESSAGE executing callback sts4.classpath.LlaMgqXy SUCCESS [done]
