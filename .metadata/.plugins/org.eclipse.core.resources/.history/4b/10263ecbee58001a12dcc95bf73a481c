@@ -1,0 +1,64 @@
+package com.reysson.cursomc.domain;
+
+import java.util.Date;
+
+public class Pedido {
+	
+	private Integer id;
+	private Date instante;
+
+	private Pagamento pagamento;
+	
+	
+
+	public Pedido() {
+		super();
+	}
+
+
+
+	public Pedido(Integer id, Date instante, Pagamento pagamento) {
+		super();
+		this.id = id;
+		this.instante = instante;
+		this.pagamento = pagamento;
+	}
+
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+
+	public Date getInstante() {
+		return instante;
+	}
+
+
+
+	public void setInstante(Date instante) {
+		this.instante = instante;
+	}
+
+
+
+	public Pagamento getPagamento() {
+		return pagamento;
+	}
+
+
+
+	public void setPagamento(Pagamento pagamento) {
+		this.pagamento = pagamento;
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package com.reysson.cursomc.domain;
+
+import com.reysson.cursomc.domain.enuns.EstadoPagamento;
+
+public class Pagamento {
+
+	private Integer id;
+	private EstadoPagamento estado;
+}

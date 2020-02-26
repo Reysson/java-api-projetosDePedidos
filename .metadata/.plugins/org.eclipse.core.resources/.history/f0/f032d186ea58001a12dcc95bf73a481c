@@ -1,0 +1,5 @@
+package com.reysson.cursomc.domain.enuns;
+
+public class EstadoPagamento {
+
+}

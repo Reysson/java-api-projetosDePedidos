@@ -1,0 +1,24 @@
+package com.reysson.cursomc.domain;
+
+import java.util.Date;
+
+import com.reysson.cursomc.domain.enuns.EstadoPagamento;
+
+public class PagamentoComBoleto extends Pagamento{
+	
+	private Date dataPagamento;
+	private Date dataVencimento;
+	
+	public PagamentoComBoleto() {
+		super();
+	}
+
+	public PagamentoComBoleto(Integer id, EstadoPagamento estado, Pedido pedido, Cliente cliente,
+			Endereco enderecoDeEntrega, Date dataPagamento, Date dataVencimento) {
+		super(id, estado, pedido, cliente, enderecoDeEntrega);
+		this.dataPagamento = dataPagamento;
+		this.dataVencimento = dataVencimento;
+	}
+
+	
+}
