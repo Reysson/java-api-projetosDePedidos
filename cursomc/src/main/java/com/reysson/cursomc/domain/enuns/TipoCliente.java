@@ -25,12 +25,12 @@ public enum TipoCliente {
 			return null;
 		}
 		for (TipoCliente x : TipoCliente.values()) {
-			if(cod.equals(x)) {
+			if(cod.equals(x.getCodigo())) {
 				return x;
 			}
 				
 		}
-		throw new IllegalArgumentException("Id inválido: "+cod);
+		throw new IllegalArgumentException("Excecao Aqui: "+cod);
 	}
 	
 }

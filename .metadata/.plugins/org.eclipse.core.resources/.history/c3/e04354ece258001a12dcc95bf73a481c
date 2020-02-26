@@ -1,0 +1,24 @@
+package com.reysson.cursomc.service;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.reysson.cursomc.domain.Categoria;
+import com.reysson.cursomc.domain.Cliente;
+import com.reysson.cursomc.repositories.ClienteRespositories;
+import com.reysson.cursomc.service.exception.ObjetoNaoEncotradoException;
+
+@Service
+public class ClienteService {
+	
+	@Autowired
+	private ClienteRespositories clienteRepositories;
+	
+	public Cliente buscar(Integer id) {
+		Optional<Cliente> obj = clienteRepositories.findById(id);
+		return obj.orElseThrow(() -> new ObjetoNaoEncotradoException("Objeto não encontrado! Id: " + id + ", Tipo: " + Categoria.class.getName()));
+		
+	}
+}
