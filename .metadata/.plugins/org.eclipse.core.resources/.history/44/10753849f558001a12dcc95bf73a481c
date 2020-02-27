@@ -13,12 +13,12 @@ import com.reysson.cursomc.domain.enuns.EstadoPagamento;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Pagamento implements Serializable{
+public class Pagamento implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	@Id
 	private Integer id;
-	private Integer estado;
+	private EstadoPagamento estado;
 	
 	@OneToOne
 	@JoinColumn(name = "pedido_id")
@@ -32,7 +32,7 @@ public abstract class Pagamento implements Serializable{
 	public Pagamento(Integer id, EstadoPagamento estado, Pedido pedido) {
 		super();
 		this.id = id;
-		this.estado = estado.getCodigo();
+		this.estado = estado;
 		this.pedido = pedido;
 	}
 
@@ -45,11 +45,11 @@ public abstract class Pagamento implements Serializable{
 	}
 
 	public EstadoPagamento getEstado() {
-		return EstadoPagamento.toEnum(estado);
+		return estado;
 	}
 
 	public void setEstado(EstadoPagamento estado) {
-		this.estado = estado.getCodigo();
+		this.estado = estado;
 	}
 
 	public Pedido getPedido() {

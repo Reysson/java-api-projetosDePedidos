@@ -2,29 +2,21 @@ package com.reysson.cursomc.domain;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.MapsId;
-import javax.persistence.OneToOne;
 import com.reysson.cursomc.domain.enuns.EstadoPagamento;
 
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-public abstract class Pagamento implements Serializable{
+public class Pagamento implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	@Id
-	private Integer id;
-	private Integer estado;
 	
-	@OneToOne
-	@JoinColumn(name = "pedido_id")
-	@MapsId
+	private Integer id;
+	private EstadoPagamento estado;
+	
 	private Pedido pedido;
 	
+	private Cliente cliente;
+	
+	private Endereco enderecoDeEntrega;
+
 	public Pagamento() {
 		super();
 	}
@@ -32,7 +24,7 @@ public abstract class Pagamento implements Serializable{
 	public Pagamento(Integer id, EstadoPagamento estado, Pedido pedido) {
 		super();
 		this.id = id;
-		this.estado = estado.getCodigo();
+		this.estado = estado;
 		this.pedido = pedido;
 	}
 
@@ -45,11 +37,11 @@ public abstract class Pagamento implements Serializable{
 	}
 
 	public EstadoPagamento getEstado() {
-		return EstadoPagamento.toEnum(estado);
+		return estado;
 	}
 
 	public void setEstado(EstadoPagamento estado) {
-		this.estado = estado.getCodigo();
+		this.estado = estado;
 	}
 
 	public Pedido getPedido() {
@@ -60,6 +52,21 @@ public abstract class Pagamento implements Serializable{
 		this.pedido = pedido;
 	}
 
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public Endereco getEnderecoDeEntrega() {
+		return enderecoDeEntrega;
+	}
+
+	public void setEnderecoDeEntrega(Endereco enderecoDeEntrega) {
+		this.enderecoDeEntrega = enderecoDeEntrega;
+	}
 
 	@Override
 	public int hashCode() {

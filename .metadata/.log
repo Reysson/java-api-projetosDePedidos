@@ -3754,3 +3754,132 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:39:38.154
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DjloGwAd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:39:38.192
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DjloGwAd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:39:38.225
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:39:38.254
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DjloGwAd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:41:58.302
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:41:58.578
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6e13e2fc[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:41:58.637
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:52.909
+!MESSAGE Boot LS startup time from start to initialized: 54136ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.435
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZauthkrHisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.527
+!MESSAGE subscribing to classpath changes: sts4.classpath.ZauthkrH isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.661
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.779
+!MESSAGE subsribers = {sts4.classpath.ZauthkrH=Send Classpath Notifications(1763)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.912
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:53.988
+!MESSAGE project cursomc ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.051
+!MESSAGE Preparing classpath changed notification cursomc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.170
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.223
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.327
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZauthkrH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.517
+!MESSAGE classpath=114 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.648
+!MESSAGE buffering callback sts4.classpath.ZauthkrH cursomc false 114
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:54.724
+!MESSAGE executing callback sts4.classpath.ZauthkrH 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 20:42:55.023
+!MESSAGE executing callback sts4.classpath.ZauthkrH SUCCESS [done]
+
+!ENTRY org.eclipse.jface.text 4 0 2020-02-26 21:22:31.315
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.util.concurrent.CompletionException: java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.completeThrowable(Unknown Source)
+	at java.util.concurrent.CompletableFuture.uniCompose(Unknown Source)
+	at java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	... 4 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:48.852
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZauthkrH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:48.966
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZauthkrH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:49.009
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:49.038
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZauthkrH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:50.903
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:51.137
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6e13e2fc[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=631)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:22:51.199
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-02-26 21:23:47.493
+!MESSAGE Boot LS startup time from start to initialized: 56219ms
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-02-26 21:24:58.391
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.lsp4e 4 0 2020-02-26 21:25:27.716
+!MESSAGE 
+!STACK 0
+java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
+	at java.util.concurrent.CompletableFuture.get(Unknown Source)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
