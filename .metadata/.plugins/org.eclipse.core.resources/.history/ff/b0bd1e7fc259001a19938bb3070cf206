@@ -1,0 +1,25 @@
+package com.reysson.cursomc.domain;
+
+
+public class ItemPedido {
+	
+	private ItemPedidoPK id = new ItemPedidoPK();
+	
+	private Float desconto;
+	private Integer quantidade;
+	private Float preco;
+	
+	public ItemPedido() {
+		super();
+	}
+
+	public ItemPedido(Pedido pedido,Produto produto, Float desconto, Integer quantidade, Float preco) {
+		id.setPedido(pedido);
+		id.setProduto(produto);
+		this.desconto = desconto;
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
+	
+	
+}
