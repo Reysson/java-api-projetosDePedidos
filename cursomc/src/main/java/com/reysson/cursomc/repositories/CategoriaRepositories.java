@@ -8,4 +8,5 @@ import com.reysson.cursomc.domain.Categoria;
 @Repository
 public interface CategoriaRepositories extends JpaRepository<Categoria, Integer>{
 
+    Optional<Categoria> findByNome(String nome);
 }
